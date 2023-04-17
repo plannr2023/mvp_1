@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20747ffa49a31f873fc73d028d1bf2a8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20747ffa49a31f873fc73d028d1bf2a8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20747ffa49a31f873fc73d028d1bf2a8 = L.map(
+                "map_20747ffa49a31f873fc73d028d1bf2a8",
+                {
+                    center: [19.4326018, -99.1332049],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aef8b4409a24820821efef4e1936e101 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var marker_0aa3b5ae11a384b455ccc799939592a3 = L.marker(
+                [19.4326018, -99.1332049],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_a8f171903f1317553788cf2805d67b0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0aa3b5ae11a384b455ccc799939592a3.setIcon(icon_a8f171903f1317553788cf2805d67b0c);
+        
+    
+            marker_0aa3b5ae11a384b455ccc799939592a3.bindTooltip(
+                `<div>
+                     Zócalo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_032b4ad15b9e14465bf5605d72b646dd = L.marker(
+                [19.4194815, -99.18945579999999],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_e868d27d2f9e8780d4f2b754cb89aaf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_032b4ad15b9e14465bf5605d72b646dd.setIcon(icon_e868d27d2f9e8780d4f2b754cb89aaf7);
+        
+    
+            marker_032b4ad15b9e14465bf5605d72b646dd.bindTooltip(
+                `<div>
+                     Bosque de Chapultepec
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf1048fe14d3876f4e95f1e8d8d704d5 = L.marker(
+                [19.4848572, -99.1178616],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_bf64f86886d2b09d5be1ba26588d58b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_bf1048fe14d3876f4e95f1e8d8d704d5.setIcon(icon_bf64f86886d2b09d5be1ba26588d58b8);
+        
+    
+            marker_bf1048fe14d3876f4e95f1e8d8d704d5.bindTooltip(
+                `<div>
+                     Basilica of Our Lady of Guadalupe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0e9c7f1324d80f7da60e8c5319ca5f2 = L.marker(
+                [19.4352, -99.1412],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_a34bf086aa5e30a918176595a7a7db3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a0e9c7f1324d80f7da60e8c5319ca5f2.setIcon(icon_a34bf086aa5e30a918176595a7a7db3f);
+        
+    
+            marker_a0e9c7f1324d80f7da60e8c5319ca5f2.bindTooltip(
+                `<div>
+                     Palacio de Bellas Artes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6cc9194af205835e723a7ed3cc30060 = L.marker(
+                [19.2956057, -99.21056519999999],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_a8c0acca1c73ea53ef1e3e93371c2caa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b6cc9194af205835e723a7ed3cc30060.setIcon(icon_a8c0acca1c73ea53ef1e3e93371c2caa);
+        
+    
+            marker_b6cc9194af205835e723a7ed3cc30060.bindTooltip(
+                `<div>
+                     Six Flags México
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c9396f231c74c0e2bad66322efa84d3 = L.marker(
+                [19.4270826, -99.16756099999999],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_7f94753357cb437aecb3aeb93247b33a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7c9396f231c74c0e2bad66322efa84d3.setIcon(icon_7f94753357cb437aecb3aeb93247b33a);
+        
+    
+            marker_7c9396f231c74c0e2bad66322efa84d3.bindTooltip(
+                `<div>
+                     The Angel of Independence
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15fb5a86bc3cd5b134341d502b6b5d5f = L.marker(
+                [19.4359374, -99.1439285],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_cf51883080317792b61206ff452a0af7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_15fb5a86bc3cd5b134341d502b6b5d5f.setIcon(icon_cf51883080317792b61206ff452a0af7);
+        
+    
+            marker_15fb5a86bc3cd5b134341d502b6b5d5f.bindTooltip(
+                `<div>
+                     Alameda Central
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6d2c4b25b99913b6fb8396c95ee3729 = L.marker(
+                [19.4204397, -99.181935],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_ac1d6551b22e187654177f8dc150de8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a6d2c4b25b99913b6fb8396c95ee3729.setIcon(icon_ac1d6551b22e187654177f8dc150de8c);
+        
+    
+            marker_a6d2c4b25b99913b6fb8396c95ee3729.bindTooltip(
+                `<div>
+                     Chapultepec Castle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_822239d709734ca86c71346f1f1697f5 = L.marker(
+                [19.4260032, -99.1862786],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_f35aff59593d88d88f25c813cf545391 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_822239d709734ca86c71346f1f1697f5.setIcon(icon_f35aff59593d88d88f25c813cf545391);
+        
+    
+            marker_822239d709734ca86c71346f1f1697f5.bindTooltip(
+                `<div>
+                     Museo Nacional de Antropología
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2bedf238440392abdadf961daddfe41 = L.marker(
+                [19.4362086, -99.1546298],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_1d9823196b33b5093b113e3b8f9bd559 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b2bedf238440392abdadf961daddfe41.setIcon(icon_1d9823196b33b5093b113e3b8f9bd559);
+        
+    
+            marker_b2bedf238440392abdadf961daddfe41.bindTooltip(
+                `<div>
+                     Monument to the Revolution
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_488ee91da98c665bace83d4ad953656d = L.marker(
+                [19.4232085, -99.1895256],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_22cf3aff7717520708e05715e5566c66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_488ee91da98c665bace83d4ad953656d.setIcon(icon_22cf3aff7717520708e05715e5566c66);
+        
+    
+            marker_488ee91da98c665bace83d4ad953656d.bindTooltip(
+                `<div>
+                     Zoológico de Chapultepec
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d0c8cdd8bcc63a4eada5bcaf3482851 = L.marker(
+                [19.43393, -99.14056],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_5eb44df77c6f43278c2bede071dd10cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d0c8cdd8bcc63a4eada5bcaf3482851.setIcon(icon_5eb44df77c6f43278c2bede071dd10cf);
+        
+    
+            marker_7d0c8cdd8bcc63a4eada5bcaf3482851.bindTooltip(
+                `<div>
+                     Mirador Torre Latino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63bcb45ed851df6d5adb76bfca5bd751 = L.marker(
+                [19.4406926, -99.2047001],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_ec6f734094062d087335b685d4f29844 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_63bcb45ed851df6d5adb76bfca5bd751.setIcon(icon_ec6f734094062d087335b685d4f29844);
+        
+    
+            marker_63bcb45ed851df6d5adb76bfca5bd751.bindTooltip(
+                `<div>
+                     Soumaya Museum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23e68483d5cf3291c993fd68d0a0af37 = L.marker(
+                [19.3575987, -99.26994409999999],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_f869d9ba7fed64560a560ab06f1a6e16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_23e68483d5cf3291c993fd68d0a0af37.setIcon(icon_f869d9ba7fed64560a560ab06f1a6e16);
+        
+    
+            marker_23e68483d5cf3291c993fd68d0a0af37.bindTooltip(
+                `<div>
+                     La Mexicana Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c69a193b3fe1278f31a21a6365763d4d = L.marker(
+                [19.4343286, -99.140163],
+                {}
+            ).addTo(map_20747ffa49a31f873fc73d028d1bf2a8);
+        
+    
+            var icon_6374d636365c7bd7c0c3608905cc810b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c69a193b3fe1278f31a21a6365763d4d.setIcon(icon_6374d636365c7bd7c0c3608905cc810b);
+        
+    
+            marker_c69a193b3fe1278f31a21a6365763d4d.bindTooltip(
+                `<div>
+                     The House of Tiles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
